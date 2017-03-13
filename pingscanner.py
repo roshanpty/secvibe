@@ -24,4 +24,4 @@ for ip in range(int(start),cnt):
         if not (reply is None):
                 print reply.dst, "is up!"
         else:
-                print "Timed ouut waiting for a response from %s" % packet[IP].dst
+                print "Timed out waiting for a response from %s" % packet[IP].dst
