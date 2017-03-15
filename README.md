@@ -22,7 +22,7 @@ Pingscanner.bash is a bash script for ping scanning the hosts in a network to fi
 **Note:** 
 Pingscanner.bash currently supports only networks with mask bits greater than or equal to 24.
 
-**1. Pingscanner.py**
+**2. Pingscanner.py**
 
 Pingscanner.py is a python script for ping scanning the hosts in a network to find live hosts. The output gives the list of hosts which responded to an ICMP echo request. The script uses scapy libraries.
 
