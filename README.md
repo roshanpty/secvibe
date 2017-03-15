@@ -11,12 +11,12 @@ Pingscanner.bash is a bash script for ping scanning the hosts in a network to fi
 
 **Usage: **
 
-./pingscanner.bash <network>
+`./pingscanner.bash <network>`
 
 **Example:**
 
-./pingscanner.bash 192.168.1.0/24
+`./pingscanner.bash 192.168.1.0/24`
 
-./pingscanner.bash 10.21.30.64/26
+`./pingscanner.bash 10.21.30.64/26`
 
 **Note:** Pingscanner.bash currently supports only networks with mask bits greater than or equal to 24.
