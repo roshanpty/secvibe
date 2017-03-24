@@ -51,7 +51,9 @@ On the server run the following command.
 
 **Example:**
 
-`$cat /var/log/apache2/access.log | grep "grepusingthis" | awk -F '[ -]' '{print $1 "\t" $6 "\t" $7 "\t" $11 "\t" $12}'`
+`$cat /var/log/apache2/access.log | grep "grepusingthis" | awk -F '[ -]' '{print $1 "\t" $6 "\t" $7 "\t" $11 "\t" $12}'
+XXX.XXX.XXX.XXX   [24/Mar/2017:19:03:41   +0000]  user1 JohnDoe@Mydomain.com
+XXX.XXX.XXX.XXX   [24/Mar/2017:19:05:45   +0000]  user2 JaneDoe@Mydomain.com`
 
 **Note:** 
 The macro will work only on Windows systems.
