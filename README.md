@@ -4,6 +4,9 @@
 **Secvibe** is a repository of scripts used for various security testing/ ethical hacking phases.
 
 The repo currently includes the following scripts.
+1. Pingscanner.bash
+2. Pingscanner.py
+3. Phishingmetrics.bas
 
 **1. Pingscanner.bash**
 
@@ -39,7 +42,7 @@ Pingscanner.py is a python script for ping scanning the hosts in a network to fi
 **Note:** 
 Pingscanner.py currently supports only networks with mask bits greater than or equal to 24.
 
-**2. Phishingmetrics.bash**
+**3. Phishingmetrics.bash**
 
 Phishingmetrics.bash is a VBA script can be used to collect metrics for a phishing campaign. The macro appends the username and email address of the target user to a query string and fires a get request to the specified target server, when the user opens the word attachment with macro from the outlook inbox. The formatted details can be obtained from the access log of server using the following command..
 
