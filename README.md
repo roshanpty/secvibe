@@ -7,6 +7,7 @@ The repo currently includes the following scripts.
 1. Pingscanner.bash
 2. Pingscanner.py
 3. Phishingmetrics.bas
+4. ADQuery-Email-User.bas
 
 **1. Pingscanner.bash**
 
@@ -64,3 +65,16 @@ On the server run the following command.
 The macro will work only on Windows systems.
 The server used here is Apache2 on ubuntu 16.04. You may need to modify the commands to format the output if you are using 
 'a different server.
+
+**4. ADQuery-Email-User.ps1**
+ADQuery-Email-User.ps1 is a Powershell script which can be used to query the Active Directory to get a list of user names corresponding to a list of email addresses on domain. In this script we are quering the AD to get accounts which have the input UserPrincipalName(email) and obtaining the curresponding SamAccountName(username). The same script can be modified to query and match any of the following data which can be obtained by Get-ADUser method.
+DistinguishedName	Enabled		GivenName	Name		ObjectClass	
+ObjectGUID		SamAccountName	SID		Surname		UserPrincipalName
+
+**Usage:**
+
+`ADQuery-Email-User.ps1 -InputFile <input file path> -OutFile <output file path> `
+
+**Example:**
+
+``ADQuery-Email-User.ps1 -InputFile "C:\EmailBank.csv" -OutFile "C:\Usernameout.csv"
