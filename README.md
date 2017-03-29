@@ -77,4 +77,4 @@ ObjectGUID		SamAccountName	SID		Surname		UserPrincipalName
 
 **Example:**
 
-``ADQuery-Email-User.ps1 -InputFile "C:\EmailBank.csv" -OutFile "C:\Usernameout.csv"
+`ADQuery-Email-User.ps1 -InputFile "C:\EmailBank.csv" -OutFile "C:\Usernameout.csv"`
